@@ -1,0 +1,40 @@
+body {
+	border: 20px solid #bdc3c7;
+	max-width: 700px;
+	width: 90%;
+	/*利用max-width 與width來控制文字隨著頁面大小自動縮放的設定：當螢幕寬度小於max-width * width時，文字即開始自動縮放*/
+	font-family: 'Montserrat', sans-serif;
+	padding: 20px;
+	margin: 20px auto 0 auto;
+}
+
+h2 {
+	color: #2c3e50;
+}
+
+.div1 {
+	margin-bottom: : 20px;
+}
+
+.date1 {
+	text-transform: uppercase;
+	color: #3498db;
+	letter-spacing: 0.2rem; /*從root element承襲下來的大小，相對自動的大小設定*/
+}
+
+.date2 {
+	text-transform: uppercase;
+	color: #3498db;
+	letter-spacing: 0.2rem;
+}
+
+
+.pindiv1 {
+	border-left: 5px solid #bdc3c7;
+	padding-left: 5px;
+}
+
+.pindiv2 {
+	border-left: 5px solid #bdc3c7;
+	padding-left: 5px;
+}

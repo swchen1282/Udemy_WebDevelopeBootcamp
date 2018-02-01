@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> <!-- 不能用4.0.0的bootstrap.min.css -->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<style type="text/css">
+		body {
+			padding-top: 70px;
+		}
+		.jumbotron {
+			color: #2c3e50;
+		}
+		/*注意CSS的優先權*/
+		.navbar-inverse {
+			background: #2c3e50;
+		}
+		.navbar-inverse .navbar-nav>li>a {
+    		color: white;
+		}
+		.navbar-inverse .navbar-brand {
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top"> <!-- 啟動navbar的方法 -->
+    <div class="container"> <!-- 把東西放在container內，較為美觀 -->
+  	  <div class="navbar-header">
+  	    <!-- 加了這段，就可以顯示出漢堡了 -->
+  	    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <!-- data-target要對到你要自動收合的tag的id -->
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- 加了這段，就可以顯示出漢堡了 -->
+  	    <a href="#" class="navbar-brand"><i class="fa fa-camera-retro" aria-hidden="true"></i> IMGS</a>
+  	  </div>
+
+  	  <!-- 利用此tag可將其他文字自動收合 -->
+  	  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+  	    <div class="nav navbar-nav">
+  	      <li>
+  	  	    <a href="#">About me</a>
+  	      </li>
+  	      <li>
+  	  	    <a href="#">Contact</a>
+  	      </li>		
+  	    </div>
+  	    <!-- 利用此tag可將其他文字自動收合 -->
+
+  	    <ul class="nav navbar-nav navbar-right"> <!-- 在nav-bar的右側塞入content -->
+  	      <li>
+  	  	    <a href="#">Sign in</a>
+  	      </li>
+  	      <li>
+  	  	    <a href="#">Log out</a>
+  	      </li>
+  	    </ul>
+      </div>
+    </div>
+    </nav> 
+
+	<div class="container jumbotron">
+	  <h1><i class="fab fa-pagelines"></i> The Image Gallery</h1>
+	  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+	  <hr class="my-4">
+	  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+	  <p class="lead">
+	    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+	  </p>
+
+	  <div class="row">
+		<div class="col-md-4 col-sm-6 col-xs-12 pink">
+			<div class="thumbnail">
+				<img src="http://i.imgur.com/qK42fUu.jpg">
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12 pink">
+			<div class="thumbnail">
+				<img src="http://i.imgur.com/bSjZKDZg.jpg">
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12 pink">
+			<div class="thumbnail">
+				<img src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12 pink">
+			<div class="thumbnail">
+				<img src="https://images.unsplash.com/photo-1439396087961-98bc12c21176?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12 pink">
+			<div class="thumbnail">
+				<img src="https://images.unsplash.com/photo-1436262513933-a0b06755c784?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12 pink">
+			<div class="thumbnail">
+				<img src="https://images.unsplash.com/photo-1434543177303-ef2cc7707e0d?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12 pink">
+			<div class="thumbnail">
+				<img src="https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12 pink">
+			<div class="thumbnail">
+				<img src="https://images.unsplash.com/photo-1439524970634-649c37a69e5c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1450&h=825&fit=crop&s=bfda9916c885869b43b70738693428d9">
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12 pink">
+			<div class="thumbnail">
+				<img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+			</div>
+		</div>
+
+	</div>
+
+	<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

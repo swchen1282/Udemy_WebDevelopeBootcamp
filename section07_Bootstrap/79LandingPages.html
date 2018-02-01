@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Perfect</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> <!-- 不能用4.0.0的bootstrap.min.css -->
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <style type="text/css">
+    body {
+      background: url(https://images.unsplash.com/photo-1471960098958-2059c6681742?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d580fdbef31e37d8ff194608812098e4&dpr=1&auto=format&fit=crop&w=767&h=342&q=60&cs=tinysrgb);
+      background-size: cover;
+      background-position: center;
+    }
+    html {
+      height: 100%;
+    }
+    #content {
+      text-align: center;
+      padding-top: 25%;
+      text-shadow: 0px 4px 3px red,
+                   0px 8px 13px purple;
+
+    }
+    #content h1 {
+      color: white;
+      font-size: 5em;
+    }
+
+    #content h3 {
+      color: lightgreen;
+    }
+
+    hr {
+      width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top"> <!-- 啟動navbar的方法 -->
+    <div class="container"> <!-- 把東西放在container內，較為美觀 -->
+      <div class="navbar-header">
+        <!-- 加了這段，就可以顯示出漢堡了 -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <!-- data-target要對到你要自動收合的tag的id -->
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- 加了這段，就可以顯示出漢堡了 -->
+        <a href="#" class="navbar-brand"><i class="fa fa-camera-retro" aria-hidden="true"></i> IMGS</a>
+      </div>
+
+      <!-- 利用此tag可將其他文字自動收合 -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+        <div class="nav navbar-nav">
+          <li class="active">
+            <a href="#">About me</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>   
+        </div>
+        <!-- 利用此tag可將其他文字自動收合 -->
+
+        <ul class="nav navbar-nav navbar-right"> <!-- 在nav-bar的右側塞入content -->
+          <li>
+            <a href="#">Sign in</a>
+          </li>
+          <li>
+            <a href="#">Log out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav> 
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div id="content">
+          <h1>Welcome to Paris</h1>
+          <h3>The amazing tour</h3>
+          <hr>
+          <button class="btn btn-default btn-lg">Get Started!!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
